@@ -167,32 +167,45 @@ nav {
   }
 }
 @media screen and (max-width: 768px) {
-  nav .logo img{
+  nav .logo img {
     width: 251.11px;
     height: 39.27px;
   }
-  nav{
+  nav {
     flex-direction: column;
     gap: 30px;
     padding: 40px;
-    & ul{
+    & ul {
       gap: 30px;
     }
   }
-  .hero-container{
+  .hero-container {
     flex-direction: column;
     padding: 20px;
     gap: 50px;
-    & h1{
+    & h1 {
       font-size: 40px;
       margin-bottom: 20px;
     }
-    & p{
+    & p {
       padding: 0;
     }
-    & .img img{
+    & .img img {
       width: 300px;
     }
   }
-  
+  .woman {
+    & h1 {
+      font-size: 35px;
+      margin-left: 0px;
+      text-align: center;
+    }
+    & .cards {
+      flex-direction: column;
+      & .card {
+        width: 320px;
+        height: 500px;
+      }
+    }
+  }
 }
