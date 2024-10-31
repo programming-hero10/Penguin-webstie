@@ -166,7 +166,7 @@ nav {
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   nav .logo img {
     width: 251.11px;
     height: 39.27px;
@@ -208,4 +208,83 @@ nav {
       }
     }
   }
+  .flex-box {
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+    gap: 20px;
+    & .img img {
+      width: 100%;
+      height: 100%;
+    }
+    & .text .cards .card .textses h3 {
+      font-size: 20px;
+    }
+    & .text .cards {
+      gap: 20px;
+    }
+    & .text .cards .card img {
+      width: 50px;
+      height: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    gap: 50px;
+    padding: 20px;
+    & ul {
+      gap: 30px;
+      font-size: 20px;
+    }
+  }
+  .hero-container {
+    padding: 50px;
+    flex-direction: column;
+    gap: 90px;
+    & h1 {
+      font-size: 55px;
+      margin-bottom: 30px;
+    }
+    & p {
+      margin-bottom: 30px;
+    }
+    & .img img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .woman {
+    & h1 {
+      font-size: 40px;
+      margin-left: 0px;
+      text-align: center;
+    }
+    & .cards {
+      flex-direction: column;
+    }
+  }
+  .flex-box {
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+    gap: 50px;
+    & .img img {
+      width: 95%;
+      height: 100%;
+    }
+    & .text .cards .card .textses h3 {
+      font-size: 25px;
+    }
+    & .text .cards {
+      gap: 20px;
+    }
+    & .text .cards .card img {
+      width: 80px;
+      height: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width:1600px) {
+  nav
 }
