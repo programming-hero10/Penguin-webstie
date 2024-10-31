@@ -166,6 +166,30 @@ nav {
     }
   }
 }
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 90px;
+  align-items: center;
+  & h3{
+    font-size: 30px;
+  }
+  & .div{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 0 390px;
+  }
+  & a{
+    text-decoration: none;
+    color: #363958;
+    font-size: 20px;
+    font-weight: bold;
+    transition:0.5s ease;
+    border: 2px solid transparent;
+    &:hover{
+      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   nav .logo img {
     width: 251.11px;
@@ -228,6 +252,13 @@ nav {
       height: 100%;
     }
   }
+  footer{
+    flex-direction: column;
+    gap: 20px;
+    & .div{
+      padding: 0 150px;
+    }
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   nav {
@@ -284,6 +315,13 @@ nav {
       height: 100%;
     }
   }
+  footer{
+    flex-direction: column;
+    gap: 20px;
+    & .div{
+      padding: 0 200px;
+    }
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
   nav {
@@ -321,5 +359,12 @@ nav {
   }
   .flex-box {
     flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+    gap: 20px;
+    & .div{
+      padding: 0 200px;
+    }
   }
 }
